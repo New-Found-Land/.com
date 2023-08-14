@@ -1,0 +1,24 @@
+<form action="register.php" method="post">
+  <input type="text" name="firstname" placeholder="First Name">
+  <input type="text" name="lastname" placeholder="Last Name">
+  <input type="email" name="email" placeholder="Email">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" value="Register">
+  <a href="download.pdf"><img src="download.png" alt="Download"></a>
+</form>
+
+
+function downloadFile() {
+  // Get the file name from the input field.
+  var fileName = document.getElementById("fileName").value;
+  // Create a new XMLHttpRequest object.
+  var xhr = new XMLHttpRequest();
+  // Set the request method and the request URL.
+  xhr.open("GET", "download.pdf");
+  // Set the content type to "application/octet-stream".
+  xhr.setRequestHeader("Content-Type", "application/octet-stream");
+  // Set the download filename.
+  xhr.setRequestHeader("Content-Disposition", "attachment; filename=" + fileName);
+  // Start the request.
+  xhr.send();
+}
