@@ -1,0 +1,1732 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F0F0F0;
+    padding: 0;
+    margin: 0;
+    margin-top: 5.8%;
+    overflow-x: hidden;
+    
+
+    /* text-align: center; */
+}
+.scroll{
+  padding: 0;
+  margin: 0;
+}
+.scroll i{
+  position: fixed;
+  display: flex;
+  margin-left: 96%;
+  margin-top: 600px;
+  justify-content: flex-end;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #0ef;
+  z-index: 100;
+}
+ .main-bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust to your desired height */
+    overflow: hidden;
+    
+ }
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  /* Add additional styles for your content, such as padding, margins, etc. */
+}
+
+.navbar{
+  /* position: fixed; */
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+  background-color: #031020;
+  margin: 0px;
+  padding: 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 6px 3px rgba(0, 0, 0, 0.1);
+}
+
+ /* .navbar .menu{
+  background-color: #4f5e46;
+} */
+
+ /* .navbar .logo-container a img{ */
+    /* position: relative; */
+    /* padding-left: 20px;
+    width: 280px; 
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ } */
+
+.navbar .menu{
+    align-self: flex-end;
+    padding-right: 100px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /* height: 30px; */
+    padding-top: 20px;
+} 
+
+.navbar .menu li{
+    align-items: center;
+	  background: transparent;
+    display: inline;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 0;
+    transition: .3s ease;
+}
+.navbar .menu li.active,
+.navbar .menu li:hover{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    border: 2px solid #0ef;
+    background: #132438;
+	  color: #ffffff;
+	  box-shadow: rgb(0, 0, 0);
+    text-decoration: underline;
+    
+    
+}
+
+/* .navbar .menu a.active{
+      position: relative;
+      border: 2px solid #0ef;
+      color: #e9e9e9;
+      font-weight: 600;
+	    text-shadow: 0 0 10px rgb(255, 255, 255);
+      text-decoration: underline;
+	    
+} */
+
+.navbar .menu li a{
+    color: #e9e9e9;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px;
+    transition: .3s ease;
+}
+
+
+.navbar .logo-container {
+    flex: 1; /* Expand to fill remaining space */
+    /* text-align: center; */
+    padding-left: 0;
+    margin: 0;
+  }
+  
+.navbar .logo-container a img{
+    padding: 20px 80px 15px;
+    /* height: 70px; */
+    width: 210px;
+  }
+
+.active{
+    color: rgb(200, 214, 255);
+}
+
+
+/* new found land text */
+.Home-text {
+  margin: auto;
+  margin-top: 50px;
+  background: rgba(170, 170, 170, 0.3);
+  border: 1px solid #e94b4b;
+  box-shadow: #f76f6f;
+  height: 350px;
+  width: 70rem;
+}
+
+.Home-text h1{
+    font-size: 90px;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    color: #031020;
+    /* padding-top: 5px; */
+    height: 30px;
+    text-shadow: 2px 2px 1px #000000;
+    
+}
+ .Home-text h3{
+    font-size: 40px;
+    font-family: "Times New Roman";
+    font-weight: lighter;
+    color: #FFFFFF;
+    /* padding-left: 103px; */
+    height: 60px;
+ }
+.Home-text h5{
+  margin: auto;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
+  width: 900px;
+  color: #FFFFFF;
+}
+
+.home-btn{
+  position: relative;
+  margin-top: 120px;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #e94b4b;
+  border-radius: 8px;
+  width: 300px;
+  height: 60px;
+  color: #fff;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+.home-btn:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem #e75959;
+}
+/* manpower and transport icon */
+  .nfl-link{
+    position: relative;
+    border: #000000;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin-top: 450px;
+    margin-left: 500px;
+    width: 450px;
+    height: 210px;
+    padding: 0;
+    color: #000;
+    
+  }
+
+.nfl-link .nfl-icon{
+    /* padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px 35px;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s ease;   
+}
+  .nfl-link .nfl-icon:hover{
+    transform: scale(1.1);
+    background: #2A2E40;
+	  color: #323946;
+	  /* box-shadow: #0ef; */ 
+}
+.nfl-link img{
+    width: 80px;
+    height: 90px;
+}
+.nfl-link a{
+    padding-left: 20px;
+    font-size: 10px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+/*------------------------ manpower and transport icon -------------------(end)*/
+
+
+.Home-container1{
+  float: left;
+  width: 45%;
+} 
+  
+.Home-container1 img{
+  width: 430px;
+  height: 510px;
+  padding-left: 50px;
+  margin: 100px;
+}
+
+.Home-container2{
+  padding-top: 20px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  float: right;
+  width: 55%;
+}
+
+.Home-container2 h2{
+  font-weight: 100;
+  font-size: 25px;
+}
+.Home-container2 h3{
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 33px;
+  width: 600px;
+}
+.Home-container2 span{
+  color: #0b2e58;
+}
+.Home-container2 h4{
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  width: 700px;
+}
+
+.Home-container2 p{
+  width: 650px;
+  text-align: justify;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+
+/* ------------------------------------------- Some of Services -------------------------------------------------------- */
+
+
+.Sservice{
+  padding-top: 48%;
+  margin: 0;
+}
+
+.Sservice .serv-title{
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
+}
+
+.Sservice p{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  width: 900px;
+  font-weight: bold;
+}
+.Sservice-img{
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+}
+
+.services1{
+  margin: 10px;
+  text-align: center;
+  background-color: #fff6f0;
+  border: 1px #000000;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 270px;
+  color: #000000;
+  transition: .5s ease;
+  z-index: 1;
+}
+
+.services1:hover{
+  transform: scale(1.1);
+}
+
+.services1 .title{
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
+}
+.services1 img{
+  border-radius: 20px;
+  padding: 15px;
+  width: 150px;
+  height: 100px;
+}
+
+.services1 p{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  text-align: justify;
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  font-size: 10px;
+}
+
+.Sservice-btn{
+  background-color: #031020;
+  padding: 15px;
+  text-align: center;
+
+}
+
+.Sservice-btn .S-btn {
+  display: inline-block;
+  padding: 10px 17px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid #e94b4b;
+  width: 230px;
+  background-color: #e94b4b;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.Sservice-btn .S-btn:hover {
+  background: #e75959;
+  color: #ffffff;
+  box-shadow: 0 0 1rem #e75959;
+}
+
+.S-btn:active {
+  background-color: #3FB86F;
+}
+
+
+
+
+/* -------------------------------------Inquire-------------------------------------------- */
+
+ .Inquire{
+  background-image: url("img/SG.png");
+  background-position: top;
+  background-size: cover; 
+  padding-bottom: 30px;
+  padding-top: 5px;
+  margin-top: 7%;
+  text-align: center;
+} 
+
+.Inquire h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  text-decoration: underline;
+  color: #F0F0F0;
+  text-shadow: #000;
+}
+
+.Inquire h3{
+  font-family: 'Times New Roman', Times, serif;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 25px;
+  color: #F0F0F0;
+
+}
+
+
+
+
+/* ---------------------------------------------Button---------------------------------------------- */
+
+.Inquire .btn {
+  display: inline-block;
+  padding: 10px 17px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 230px;
+  border: none;
+  background-color: #e94b4b;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.Inquire .btn:hover {
+  background: #e75959;
+  color: #ffffff;
+  box-shadow: 0 0 1rem #e75959;
+}
+
+.btn:active {
+  background-color: #3FB86F;
+}
+
+/* ----------------------------Some of our client ------------------------------- */
+
+.Sclient{
+  padding-bottom: 50px;
+  padding-top: 10px;
+  margin-top: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.Sclient h1{
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 550;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
+}
+
+.Sclient-img{
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+}
+
+.Sclient-img img{
+  width: 130px;
+  border-radius: 20px;
+}
+
+/* -------------------------------Home Carousel----------------------------------- */
+
+/* .Carousel-logo {
+  position: relative;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  padding-left: 20px;
+} */
+
+
+.Carousel-logo {
+  background: #eee;
+  width: 90%;
+  height: 300px;
+}
+
+.logo-c {
+  width: 30px;
+  height: 50px;
+}
+
+.logo-cli {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-cli img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.logo-c {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* ------------------------------------------FOOTER-------------------------------------------------- */
+
+footer{
+  /* position: absolute; */
+  clear: both;
+  margin-top: 30px;
+  background-color: #031020;
+  box-shadow: 0 0 10px rgb(113, 122, 122);
+  /* justify-content: center; */
+  text-align: center;
+  /* z-index: 10; */
+}
+.S-footer{
+  padding-left: 50px;
+  font-family: 'Nunito', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  text-align: center;
+}
+
+.column1 img{
+  padding: 30px;
+  padding-top: 30px;
+  width: 250px;
+}
+
+.F-btn{
+  border: 2px solid #e94b4b;
+  background-color: #e94b4b;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+  height: 38px;
+  transition: background-color .3s ease;
+  z-index: 1;
+}
+
+.F-btn:hover {
+background: #e75959;
+color: #ffffff;
+box-shadow: 0 0 1rem #e75959;
+}
+
+.column2{
+  padding-top: 10px;
+  color: rgb(255, 255, 255);
+  width: 300px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.column2 h2{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  display: inline-flex;
+  
+}
+
+.column2 p{
+  font-size: 12px;
+  font-weight: lighter;
+  
+}
+
+.column2 i{
+  font-size: 25px;
+}
+
+.column2 p a{
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.column2 p a:hover{
+  text-decoration: underline;
+  font-size: 16px;
+	color: rgb(255, 255, 255);
+  text-shadow: 0 0 1rem rgb(136, 127, 127);
+  font-weight: bold;
+}
+
+.hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3px;
+  background-color: #000000; 
+  border: none;
+  color: #000;
+  /* margin: 50px 0; */
+}
+
+.Social-media{
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+.Social-media a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
+	background: transparent;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 50%;
+	font-size: 1rem;
+	color: rgb(255, 255, 255);
+	margin: 5px 50px 5px 0 ;
+	transition: .5s ease;
+}
+
+.Social-media a:hover{
+	background: #ffffff;
+	color: #031020;
+	box-shadow: 0 0 1rem rgb(50, 54, 54);
+}
+
+.footer-d{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #ffffff;
+  background-color: #000000;
+}
+.footer-d p{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 9px;
+}
+
+
+
+/* ------------------------------ABOUT---------------------------------------- */
+
+.try{
+  position: relative;
+  /* padding-top: 900px; */
+  top: 20px;
+  width: 550px;
+  /* height: 400px; */
+  /* margin-top: 130px; */
+  clip-path: polygon(500px 0, 400px 0, 330px 60px, 0 60px, 0 0);
+  background-color: #031020;
+}
+
+
+.try h4{
+  padding-left: 100px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main-about{
+  padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+/* .title{
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 550; 
+  text-align: center;
+  text-decoration: underline;
+} */
+
+.title{
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
+}
+
+.NFL1{
+  /* float: left;
+  width: 50%; */
+  text-align: center;
+}
+
+.NFL1 img{
+  width: 500px;
+}
+
+.NFL1 h6{
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 20px;
+}
+/* .NFL2{
+  padding: 0;
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+.NFL2 img{
+  width: 300px;
+}
+
+.NFL2 p{
+  text-align: justify;
+  width: 550px;
+  padding-left: 80px;
+  font-weight: 100;
+} */
+
+
+/* ------------------------------Mission and Vision------------------------------------ */
+
+.MV{
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+.MV .mission{
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.MV .mission h3{
+  font-size: 30px;
+  width: 250px;
+  padding-left: 35%;
+  font-weight: bold;
+  justify-content: center;
+}
+.MV .mission p{
+  text-align: justify;
+  width: 450px;
+  padding-left: 150px;
+  font-weight: 100;
+}
+
+.MV .vision{
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+.MV .vision h3{
+  font-size: 30px;
+  width: 250px;
+  padding-left: 25%;
+  font-weight: bold;
+  justify-content: center;
+}
+.MV .vision p{
+  padding-left: 10px;
+  text-align: justify;
+  width: 450px;
+  padding-left: 80px;
+  font-weight: 100;
+}
+
+
+/* ---------------------------------------------History of NFL ------------------------------------- */
+
+.About-container{
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+
+.About-container .About-details1{
+  float: left;
+  width: 45%;
+}
+
+.About-container .About-details1 img{
+  width: 430px;
+  height: 510px;
+  padding-left: 150px;
+  padding-top: 180px;
+}
+
+.About-container .About-details2{
+  padding-top: 100px;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  float: right;
+  width: 55%;
+}
+
+.About-container .About-details2 h2{
+  font-weight: 100;
+  font-size: 25px;
+}
+.About-container .About-details2 h3{
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 33px;
+  width: 600px;
+}
+.About-container .About-details2 span{
+  color: #0b2e58;
+}
+.About-container .About-details2 h4{
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  width: 650px;
+}
+
+.About-container .About-details2 p{
+  width: 650px;
+  text-align: justify;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+.About-C2{
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+
+
+.About-C2 .About-container1{
+  padding-top: 20px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  float: left;
+  width: 54%;
+}
+
+.About-C2 .About-container1 h3{
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 100px;
+  margin-top: 0px;
+  padding-left: 150px;
+  font-size: 30px;
+  width: 600px;
+}
+
+.About-C2 .About-container1 p{
+  padding-left: 150px;
+  width: 630px;
+  text-align: justify;
+  font-family: 'Nunito', sans-serif;
+}
+
+.About-C2 .About-container2{
+  float: right;
+  width: 46%;
+  padding: 0;
+  margin: 0;
+} 
+  
+.About-C2 .About-container2 img{
+  width: 430px;
+  height: 510px;
+  padding-right: 50px;
+  margin: 100px;
+}
+
+/* --------------------------------------- Table of Organization------------------------------------ */
+
+.chart{
+  clear: both;
+  padding: 0;
+  margin:  0;
+}
+.chart .table-org{
+  text-align: center;
+  justify-content: center;
+}
+.chart .table-org h3{
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+.chart .table-org p{
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.chart .table-org img{
+  width: 80%;
+}
+
+
+/* ---------------------------image carousel---------------------------- */
+
+.Carousel{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+ 
+}
+.Carousel .container{
+  width: 80%;
+  padding: 20px;
+  /* background-color: #1f242d;
+  border: #031020; */
+}
+section .card .image{
+  height: 110px;
+  width: 110px;
+  border-radius: 10%;
+  padding: 3px;
+  background: #1f242d;
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 3px solid #fff;
+}
+ 
+.card{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 2rem rgb(0, 0, 0, .2);
+  margin: 10px 0;
+  width: 800px; 
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  height: 45%;
+  width: 100%;
+  background: #1C1F2E;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.card .media-icon{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.card .media-icon i{
+  color: #0ef;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card .media-icon i:hover{
+  opacity: 1;
+}
+
+.card .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: #333;
+}
+
+.name-profession .name{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.name-profession .profession{
+  font-size: 12px;
+  font-weight: 500;
+  justify-content: center;
+}
+
+
+/* ----------------------CLIENTS----------------------------- */
+
+
+.Clients{
+  padding-top: 20px;
+  margin: 0;
+}
+
+.Clients .client-title{
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
+}
+
+.Clients p{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  width: 900px;
+  font-weight: bold;
+}
+.client-img{
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+}
+
+.client1{
+  margin: 10px;
+  text-align: center;
+  background-color: #f0f5fa;
+  border: 1px #000000;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  height: 350px;
+  color: #000000;
+  transition: .3s ease;
+  z-index: 1;
+}
+
+.client1:hover{
+  transform: scale(1.1);
+  
+}
+
+.client1 .title{
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 1px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
+  height: 40px;
+}
+.client1 img{
+  border-radius: 20px;
+  padding: 15px;
+  width: 180px;
+  height: 120px;
+}
+
+.client1 p{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  text-align: justify;
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+  font-size: 10px;
+}
+
+.client1 p:hover{
+  text-decoration: underline;
+}
+
+.client1 .c-btn{
+  margin-top: 10px;
+  font-size: 18px;
+  width: 150px;
+  height: 35px;
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border-color: #e94b4b;
+  background-color: #e94b4b;
+  border-radius: 10px;
+}
+
+.client1 .c-btn:hover{
+  background: #e75959;
+  color: #000000;
+  box-shadow: 0 0 1rem #e75959;
+  text-decoration: none;
+} 
+
+
+/* ---------------------------Contact--------------------------- */
+
+
+.main-contact{
+  padding: 0;
+  margin: 0;
+}
+
+.main-contact h1{
+  padding-top: 150px;
+  padding-left: 100px;
+  font-size: 20px;
+  text-decoration: underline;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.o-manpower{  
+  position: relative;
+  top: 20px;
+  left: 100px;
+  /* padding-left: 10px; */
+  width: 500px;
+  height: 45px;
+  text-align: center;
+  border: 1px solid #3FB86F;
+  background-color: #3FB86F;
+  /* border-radius: 5px; */
+}
+
+.o-manpower h2{  
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+
+}
+
+
+/* ---------------------------------Services Page------------------------------------ */
+
+.services{
+  padding: 0;
+  padding-top: 100px;
+  margin: 0;
+  clear: both;
+}
+/* -------------------------------------------------------- */
+.services .N-services1{
+  float: left;
+  width: 55%;
+  padding-top: 20px;
+}
+
+.N-services1 h3{
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 130px;
+  margin-top: 0px;
+  font-size: 25px;
+  text-decoration: underline;
+  width: 500px;
+}
+
+.N-services1 img{
+  padding-left: 120px;
+  width: 39rem;
+  height: 23rem;
+}
+/* ------------------------------------------------------------------ */
+.services .D-services1{
+  float: right;
+  width: 45%;
+  padding-top: 30px;
+}
+
+.D-services1 h3{
+  padding-top: 10px;
+  padding-left: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-decoration: underline;
+  /* text-align: justify;
+  width: 300px; */
+}
+
+.D-services1 ul li,
+.D-services1 p{
+  text-align: justify;
+  padding-left: 20px;
+  width: 530px;
+  font-family: 'Nunito', sans-serif;
+}
+/* ---------------------------------------------------------------------- */
+.M-services2{
+  clear: both;
+  padding-top: 50px;
+}
+
+.services .D-services2{
+  float: left;
+  width: 45%;
+  padding-top: 40PX;
+}
+.D-services2 h3{
+  padding-top: 30px;
+  padding-left: 120px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-decoration: underline;
+  /* text-align: justify;
+  width: 300px; */
+}
+.D-services2 ul li,
+.D-services2 p{
+  padding-left: 120px;
+  text-decoration: none;
+  text-align: justify;
+  width: 530px;
+  font-family: 'Nunito', sans-serif;
+  
+}
+/* ----------------------------------------------------------------------- */
+.M-services2 .N-services2{
+  float: right;
+  width: 55%;
+}
+
+.M-services2 .N-services2 img{
+  padding-left: 50px;
+  padding-top: 50px;
+  width: 39rem;
+  height: 23rem;
+}
+/* ----------------------------------------------------------------------- */
+.M-services3{
+  clear: both;
+  padding-top: 70px;
+}
+
+.M-services3 .N-services3{
+  float: left;
+  width: 55%;
+}
+
+.M-services3 .N-services3 img{
+  padding-top: 50px;
+  padding-left: 120px;
+  width: 39rem;
+  height: 23rem;
+  
+}
+/* -------------------------------------------------------------------- */
+
+.M-services3 .D-services3{
+  float: right;
+  width: 45%;
+  padding-top: 10px;
+}
+
+.D-services3 h3{
+  /* padding-top: 10px; */
+  padding-left: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-decoration: underline;
+  /* text-align: justify;
+  width: 300px; */
+}
+.D-services3 ul li,
+.D-services3 p{
+  text-align: justify;
+  padding-left: 20px;
+  width: 530px;
+  font-family: 'Nunito', sans-serif;
+}
+/* -------------------------JOBS------------------------------------ */
+.job-title{
+  padding-top: 20px;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+/* .job-title h2{
+  padding-top: 60px;
+  font-size: 35px;
+  font-weight: 700;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+} */
+.job-title h3{
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+}
+.job-title p{
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  /* width: 800px; */
+}
+/* .main-accordion h1{
+  padding-left: 100px;
+  padding-top: 50px;
+  font-size: 30px;
+  text-decoration: underline;
+} */
+/* -----------------------Accordion---------------------------- */
+.divider{
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 60% 40%;
+  display: grid;
+}
+.main-accordion{
+  padding: 0;
+  margin: 0;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+.main-accordion .job-manpower h1{
+  /* padding-left: 100px; */
+  padding-top: 30px;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.accordion{
+  max-width: 650px;
+}
+.accordion .contentBx{
+  position: relative;
+  margin: 10px 20px;
+}
+.accordion .contentBx .label{
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  padding: 10px;
+  padding-left: 20px;
+  background: #D9D9D9;
+  color: #000;
+  cursor: pointer;
+}
+.accordion .contentBx .label::before{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+.accordion .contentBx.active .label::before{
+  content: '-';
+}
+.accordion .contentBx .content{
+  position: relative; 
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow: auto;
+}
+.accordion .contentBx.active .content{
+  height: 200px;
+  padding: 10px;
+}
+.accordion .contentBx .content{
+  padding-left: 500px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.accordion .contentBx .content ul li{
+  color: #000;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  padding-left: 20px;
+  margin-left: 10px;
+  text-align: justify;
+}
+.accordion .contentBx .content button{
+  width: 150px;
+  height: 40px;
+  border: 2px solid #3FB86F;
+  background-color: #3FB86F;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+
+
+.job-req{
+  padding: 0;
+  margin: 0;
+  padding-top: 80px;
+}
+.job-req button{
+  width: 400px;
+  height: 45px;
+  border: 2px solid #3FB86F;
+  background-color: #3FB86F;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.job-req h4{
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Nunito', sans-serif;
+}
+.job-req ul{
+  padding-left: 50px;
+}
+.job-req li{
+  font-size: 17px;
+  font-weight: 100;
+  font-family: 'Nunito', sans-serif;
+}
+/* ---------apply now------------ */
+.apply{
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+.apply{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 100px;
+}
+.apply h1{
+  font-size: 30px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.apply p{
+  font-size: 17px;
+  font-weight: 100;
+}
+
+/* ----------------JOB FORM------------- */
+.jform{
+  padding: 0;
+  margin: 0;
+}
+.jform{
+  margin-top: 100px;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 800px;
+  margin: auto;
+}
+form{
+  padding: 40px;
+}
+.jform .jname{
+  margin-bottom: 20px;
+}
+.jform label{
+  display: block;
+  margin-bottom: 3px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.jform .name{
+  display: flex;
+  justify-content: space-between;
+}
+.jform .name input[type="text"]{
+  width: 210px;
+}
+.jform input[type="text"], input[type="email"], textarea{
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  /* width: 240px; */
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #9597a6;
+  padding: 10px;
+  outline: none;
+}
+.jform select{
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 15px;
+  outline: none;
+}
+.date{
+  display: flex;
+  justify-content: space-evenly;
+}
+#remarks{
+  height: 150px;
+}
+.jform .submit{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.jform #submit{
+  margin-top: 10px;
+  font-size: 18px;
+  width: 220px;
+  height: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  border-color: #3FB86F;
+  background-color: #3FB86F;
+  border-radius: 10px;
+  transition: .3s ease;
+}
+.jform #submit:hover{
+  background: #45c478;
+  color: #ffffff;
+  box-shadow: 0 0 1rem #45c478;
+  text-decoration: none;
+}
+
+/* ---------------------------Contact--------------------------- */
+
+
+.main-contact{
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}
+.main-contact h1{
+  padding-top: 50px;
+  padding-left: 100px;
+  font-size: 18px;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  font-weight: 500;
+  /* width: 500px; */
+}
+.o-manpower{  
+  /* position: relative; */
+  top: 20px;
+  left: 100px;
+  /* padding-left: 10px; */
+  width: 480px;
+  height: 45px;
+  text-align: center;
+  border: 1px solid #3FB86F;
+  background-color: #3FB86F;
+  /* border-radius: 5px; */
+}
+.o-manpower h2{  
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  justify-content: center;
+  text-align: center;
+}
+.o-manpower i{  
+  padding-right: 20px;
+}
+.c-details{
+  padding-left: 100px;
+  padding-top: 20px;
+}
+.c-details h4{
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.c-details p{
+  padding-left: 100px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  width: 400px;
+}
+.map1 h3{
+  padding-top: 220px;
+  font-size: 22px;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ----------------------------------------------------------------------- */
+.size{
+  min-height: 250px;
+}
+
+
+
+/* @media(max-width:800px){
+	.main-bg{
+	width:100%;
+	float: none;
+	}	
+	.logo-container{
+	width:100%;
+	float: none;
+	}
+  .menu{
+    width:100%;
+    float: none;
+    }
+  .Home-text{
+    width:100%;
+    float: none;
+    }
+  .Home-text2{
+    width:100%;
+    float: none;
+    }
+
+} */
+
+/* ----------------------------transport form---------------------- */
+
+
